@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgo60t817al4m"]
+
+[ext_resource type="AudioStream" uid="uid://dt3ehk7tshfrq" path="res://music/BeepBox-Song.wav" id="1_1fuk8"]
+
+[node name="EndCredits" type="Node2D"]
+
+[node name="Yes" type="Label" parent="."]
+offset_right = 1156.0
+offset_bottom = 180.0
+theme_override_colors/font_color = Color(0.6862745, 0, 0.039215688, 1)
+theme_override_font_sizes/font_size = 42
+text = "You won 
+Jhon Has Been Sacrifice!
+"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = -4.0
+offset_top = 458.0
+offset_right = 1150.0
+offset_bottom = 630.0
+theme_override_font_sizes/font_size = 23
+text = "this was awful.
+
+
+WE SPENT SO MUCH TIME ON USELESS THINGS LIKE OH MY GOD.
+ THIS WAS NOT WORTH THE ALL-NIGHTER."
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_top = 133.0
+offset_right = 1149.0
+offset_bottom = 437.0
+theme_override_font_sizes/font_size = 37
+text = "Credits:
+Art: Kevin Aapro, Savva Fedorov
+Code: Santeri Kuusisto, Savva Fedorov, Kevin Aapro
+Music: Savva Fedorov
+(Still lost THE GAME)"
+horizontal_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_1fuk8")
+autoplay = true

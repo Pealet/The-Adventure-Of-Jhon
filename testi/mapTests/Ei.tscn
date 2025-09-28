@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dukooj888ykli"]
+
+[ext_resource type="Script" uid="uid://dyahxq6ghrgx6" path="res://mapTests/character_body_2d.gd" id="1_nnfep"]
+[ext_resource type="Texture2D" uid="uid://bwo7eif358u5" path="res://sprites/Näyttökuva_27-9-2025_164557_www.piskelapp.com-removebg-preview.png" id="2_2owxv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gvugi"]
+radius = 52.63079
+
+[node name="Ei" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(-12, 27)
+script = ExtResource("1_nnfep")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(380, 341)
+shape = SubResource("CircleShape2D_gvugi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(379, 334.99997)
+scale = Vector2(0.18980053, 0.21051301)
+texture = ExtResource("2_2owxv")
